@@ -1,5 +1,4 @@
 import courseschedule.*;
-import courseschedule.gui.*;
 import courseschedule.util.*;
 
 import java.awt.*;
@@ -85,6 +84,7 @@ public class LecturerTableGUI extends JPanel {
 
 		TableButton tb = new TableButton(header, of.getOffset());
 		tb.setPreferredSize(new Dimension(900,20));
+		tb.setIsHeader(true);
 		tb.setForeground(CustomColour.silverclouds);
 		containerHeader.add(tb);
 	}
@@ -99,7 +99,7 @@ public class LecturerTableGUI extends JPanel {
 			row.add(list.get(i));
 		}
 
-		scrollPanel.setPreferredSize(new Dimension(850,331));
+		scrollPanel.setPreferredSize(new Dimension(900,331));
 		scrollPanel.setBorder(BorderFactory.createEmptyBorder());
 		scrollPanel.getVerticalScrollBar().setUI(new CustomScrollBarUI(1));
 		// scrollPanel.getHorizontalScrollBar().setUI(new CustomScrollBarUI(2));

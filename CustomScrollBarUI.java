@@ -1,4 +1,3 @@
-package courseschedule.gui;
 
 import javax.swing.*;
 import javax.swing.plaf.basic.*;

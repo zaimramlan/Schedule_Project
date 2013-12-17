@@ -1,4 +1,3 @@
-import courseschedule.gui.*;
 import courseschedule.util.*;
 
 import java.awt.*;
@@ -88,6 +87,7 @@ public class ScheduleTableGUI extends JPanel {
 
 		TableButton tb = new TableButton(header, of.getOffset());
 		tb.setPreferredSize(new Dimension(900,20));
+		tb.setIsHeader(true);
 		tb.setForeground(CustomColour.getSilverClouds());
 		containerHeader.add(tb);
 	}

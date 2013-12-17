@@ -1,4 +1,3 @@
-import courseschedule.gui.*;
 import courseschedule.util.*;
 
 import java.awt.*;
@@ -75,9 +74,7 @@ public class MainGUI extends JPanel {
 
 			for(int i=0; i<2; i++) {
 				btn[i].addActionListener(new ButtonListener());
-				// btn[i].setFontUpperLabel(font.getFontSegoe(14,Font.BOLD,-0.09));
 				btn[i].setFontUpperLabel(font.getFontPTSans(15, Font.BOLD, -0.05));
-				// btn[i].setFontLowerLabel(font.getFontSegoe(13,-0.03));
 				btn[i].setFontLowerLabel(font.getFontPTSans(14, -0.07));
 			}
 		}

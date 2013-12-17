@@ -1,5 +1,4 @@
 import courseschedule.*;
-import courseschedule.gui.*;
 import courseschedule.util.*;
 
 import java.awt.*;
@@ -9,7 +8,7 @@ import javax.swing.*;
 
 public class Frame extends JFrame {
     public static final ScheduleBuilder sb = new ScheduleBuilder();
-    public static final ScheduleFiling sf = new ScheduleFiling(sb);
+    public static final ScheduleFiling sf = new ScheduleFiling(sb);   
 
 	public void initFrame() {
 		setTitle("Course Scheduling App");
@@ -35,7 +34,6 @@ public class Frame extends JFrame {
 
 	public static void main(String[] args) {
 		MainGUI s = new MainGUI();
-		// CourseGUI s = new CourseGUI();
 		Frame frame = new Frame();
 
 		frame.initFrame();
